@@ -75,6 +75,7 @@ for ($i=0; $i < 10 ; $i++) { //Loppar genom varje index och tilldelar värden ut
     $product = array(
         "name" => $name[$i],
         "description" =>  $description[$i],
+        "inStock" => $inStock [$i] = rand(0, 50),
         "image" => $image[$i],
         "image_lg" => $image_lg[$i],
         "price" => number_format($price[$i], 0, ',', ' ')
