@@ -82,8 +82,6 @@ class Products
 
     foreach ($array as $key => $value) {
 
-      $inStock = rand(0, 50);
-
       $product .= "
             <div class='col-md-6 mb-4'>
               <div class='card h-100'>
@@ -106,7 +104,7 @@ class Products
                       </div>
                   </div>
 
-                  <p class='card-text text-right'>Lediga platser: $inStock</p>
+                  <p class='card-text text-right'>Lediga platser: $value[inStock]</p>
                   <p class='card-text mt-3'>$value[description]</p>
 
                       $booking_form
